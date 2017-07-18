@@ -6,7 +6,7 @@
 #include "Game.h"
 using namespace std;
 
-
+//the code for creating a game instance and running the game
 int main()
 {
 	bool keepPlaying = true;
@@ -15,10 +15,12 @@ int main()
 		bool stillWinning = true;
 		Game YourGame = Game();
 		YourGame.Intro();
+		//the game has up to seven levels, so the code goes through at most seven iterations
 		for (int i = 0; i < 7; i++)
 		{
 			if (stillWinning)
 			{
+				//a time delay of two seconds
 				YourGame.Delay(2);
 				cout << "\n" << "***DAY " << i + 1 << "***" << endl;
 				YourGame.DisplayStatus();
@@ -88,6 +90,7 @@ int main()
 				cout << "Unfortunately, you killed the cactus." << endl << endl;
 			}
 		}
+		//code to make sure user input is valid, and if not, prompt user for more input until the input is valid  
 		cout << "Press '1' to keep playing, or '0' to quit." << endl;
 		int choice;
 		cin >> choice;
