@@ -306,15 +306,6 @@ void Game::PrintNormalOptions()
 
 }
 
-void Game::EnterPrompt()
-{
-	cout << "\n";
-	cout << "Press 'ENTER' to continue." << endl;
-	cin.ignore(numeric_limits<streamsize>::max(), '\n');
-	cout << endl;
-	cin.clear();
-	cin.ignore();
-}
 void Game::PrintExtraOptions()
 {
 	cout << "What would you like to do?" << endl;
