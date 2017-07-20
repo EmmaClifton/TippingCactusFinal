@@ -81,7 +81,7 @@ void Game::Intro()
 		Delay(4);
 		cout << "It's best to water the cactus evenly...maybe every other day?" << endl;
 		Delay(4);
-		cout << "However, this is a tempermental cactus, so don't expect consistency!" << endl;
+		cout << "However, this is a temperamental cactus, so don't expect consistency!" << endl;
 		Delay(4);
 		cout << "So when did your friend last water the cactus? " << endl;
 		Delay(4);
